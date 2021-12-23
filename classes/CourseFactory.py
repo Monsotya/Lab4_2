@@ -9,23 +9,28 @@ from classes.dataBase import DataBase
 class CourseFactory(ICourseFactory):
     """Factory for creating local and offsite courses"""
     def __init__(self, path):
+        """Constructor for course factory: @:param path(string) - path to data base)"""
         self.__courses = []
         self.__teachers = []
         self.__db = DataBase(path)
 
     @property
     def teachers(self):
+        """Getter for teachers"""
         return self.__teachers
 
     @property
     def courses(self):
+        """Getter for courses"""
         return self.__courses
 
     @property
     def db(self):
+        """Getter for db"""
         return self.__db
 
     def find_teacher(self, code):
+        """Checks for duplicates in teachers"""
         if not isinstance(code, int):
             raise TypeError
         if code < 1:
@@ -36,6 +41,7 @@ class CourseFactory(ICourseFactory):
         return False
 
     def find_course(self, code):
+        """Checks for duplicates in courses"""
         if not isinstance(code, int):
             raise TypeError
         if code < 1:
@@ -46,6 +52,7 @@ class CourseFactory(ICourseFactory):
         return False
 
     def create_local_course(self, teacher_code, course_code) -> ILocalCourse:
+        """Method for creating local course"""
         if self.find_course(course_code) and self.find_teacher(teacher_code):
             if isinstance(self.find_course(course_code), LocalCourse):
                 raise ValueError
@@ -62,6 +69,7 @@ class CourseFactory(ICourseFactory):
         return obj
 
     def create_offsite_course(self, teacher_code, course_code) -> IOffsiteCourse:
+        """Method for creating offsite course"""
         if self.find_course(course_code) and self.find_teacher(teacher_code):
             if isinstance(self.find_course(course_code), OffsiteCourse):
                 raise ValueError

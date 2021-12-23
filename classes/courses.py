@@ -6,6 +6,8 @@ from classes.dataBase import DataBase
 class Course(ICourse):
     """Class that describes courses"""
     def __init__(self, teacher, course, db):
+        """Constructor for course:
+        @:param course(int) - course, @:param teacher(int/Teacher) - teacher, @:param db(DataBase) - data base)"""
         self.__name = None
         self.__topics = None
         self.__db = db
@@ -14,10 +16,12 @@ class Course(ICourse):
 
     @property
     def topics(self):
+        """Getter for topics"""
         return self.__topics
 
     @topics.setter
     def topics(self, topics):
+        """Setter for topics"""
         if not isinstance(topics, str):
             raise TypeError
         if not topics:
@@ -27,10 +31,12 @@ class Course(ICourse):
 
     @property
     def db(self):
+        """Getter for name"""
         return self.__db
 
     @db.setter
     def db(self, db):
+        """Setter for db"""
         if not isinstance(db, DataBase):
             raise TypeError
 
@@ -38,10 +44,12 @@ class Course(ICourse):
 
     @property
     def code(self):
+        """Getter for code"""
         return self.__code
 
     @code.setter
     def code(self, code):
+        """Setter for code"""
         if not isinstance(code, int):
             raise TypeError
         if code < 1:
@@ -60,10 +68,12 @@ class Course(ICourse):
 
     @property
     def name(self):
+        """Getter for name"""
         return self.__name
 
     @name.setter
     def name(self, name):
+        """Setter for name"""
         if not isinstance(name, str):
             raise TypeError
         if not name:
@@ -73,10 +83,12 @@ class Course(ICourse):
 
     @property
     def teacher(self):
+        """Getter for teacher"""
         return self.__teacher
 
     @teacher.setter
     def teacher(self, teacher):
+        """Setter for teacher"""
         if isinstance(teacher, int):
             if teacher < 1:
                 raise TypeError

@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="798fe1ac-1332-405f-82a9-e2d80f5ce407" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Lab4_2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/CourseFactory.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/LocalCourse.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/OffsiteCourse.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/Teacher.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interfaces/ICourse.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interfaces/ICourseFactory.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interfaces/ILocalCourse.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interfaces/IOffsiteCourse.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interfaces/ITeacher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task.py" beforeDir="false" afterPath="$PROJECT_DIR$/Task.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/courseFactory.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/courseFactory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/courses.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/courses.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/dataBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/dataBase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/offsiteCourse.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/offsiteCourse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/teacher.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/teacher.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

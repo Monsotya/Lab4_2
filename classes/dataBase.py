@@ -6,6 +6,7 @@ from sqlite3 import Error
 class DataBase:
     """Class for getting and inserting information from data base"""
     def __init__(self, path):
+        """Constructor for data base @:param path(str) - path to data base"""
         self.path = path
         self.connection = self.path
 
